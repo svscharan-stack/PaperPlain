@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PaperPlain — Research Papers in Simple English</title>
+    <meta
+      name="description"
+      content="Upload any research paper PDF and read its title, authors, problem, method, dataset, results, limitations, and 5 key takeaways in simple everyday English."
+    />
+    <meta property="og:title" content="PaperPlain — Research Papers in Simple English" />
+    <meta
+      property="og:description"
+      content="Upload any research paper PDF and read its title, authors, problem, method, dataset, results, limitations, and 5 key takeaways in simple everyday English."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("paperplain_theme");
+          var useDark = saved ? saved === "dark" : true;
+          document.documentElement.classList.toggle("dark", useDark);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased selection:bg-blue-100 selection:text-blue-900 dark:selection:bg-blue-900/60 dark:selection:text-blue-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
